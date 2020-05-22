@@ -425,7 +425,10 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
+#portfolio-wrapper .columns{ 
+   margin-bottom: 36px;
+   /* width: 50%; */ /* question */
+}
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
@@ -513,7 +516,7 @@ ul#nav li.current a { color: #F06000; }
 
 /* popup modal */
 .popup-modal {
-	max-width: 550px;
+   max-width: 1600px;
 	background: #fff;
 	position: relative;
 	margin: 0 auto;
