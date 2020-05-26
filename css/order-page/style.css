@@ -5,22 +5,87 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
 a, img {
   cursor: pointer;
 }
 
-.content-position {
-  margin: 0 auto;
-  max-width: 1100px;
-  padding-left: 10px;
-  padding-right: 10px;
+body {
+  padding: 40px;
+  background-color: #C4C4C4;
 }
 
-body {
-  background-color: #C4C4C4;
+body header {
+  height: 60px;
+}
+
+body header .header-wrap {
+  background-color: #fff;
+  height: 60px;
+  padding: 7px 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+body header .header-wrap .logo-wrap .logo {
+  width: 47px;
+  height: 47px;
+}
+
+body header .header-wrap .nav-wrap ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body header .header-wrap .nav-wrap ul li {
+  margin-right: 54px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transform-style: flat;
+          transform-style: flat;
+}
+
+body header .header-wrap .nav-wrap ul li a {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #00AFF3;
+}
+
+body header .header-wrap .nav-wrap ul li:last-child {
+  margin-right: 0;
+}
+
+body header .header-wrap .nav-wrap ul li:hover {
+  border-bottom: 4px solid #FF0090;
 }
 /*# sourceMappingURL=style.css.map */

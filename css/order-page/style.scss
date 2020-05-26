@@ -6,21 +6,73 @@
     margin: 0;
     padding: 0;
     user-select: none; 
-    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 a, img {
     cursor: pointer;
 }
-.content-position{
-    margin: 0 auto;
-    max-width: 1100px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 // all styles
 
 body{
+    padding: 40px;
     background-color: #C4C4C4;
+    header{
+        height: 60px;
+        .header-wrap{
+            background-color: #fff;
+            height: 60px;
+            padding: 7px 17px;
+    
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            margin: 0 auto;
+            max-width: 1024px;
+            .logo-wrap{
+                .logo{
+                    width: 47px;
+                    height: 47px;
+                }
+            }
+            .nav-wrap{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    li{
+                        margin-right: 54px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+    
+                        border-top: 4px solid transparent;
+                        border-bottom: 4px solid transparent;
+    
+                        @include animation;
+                        a{
+                            font-family: Rubik;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+        
+                            color: #00AFF3;
+                        }
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                    li:hover{
+                        border-bottom: 4px solid #FF0090;
+                    }
+                }
+            }
+        }
+    }
 }
 @import "media.scss";
  
