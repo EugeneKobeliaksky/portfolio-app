@@ -8,8 +8,12 @@
     user-select: none; 
     font-family: 'Rubik', sans-serif;
 }
-a, img {
+a {
     cursor: pointer;
+}
+.content-width{
+    margin: 0 auto;
+    max-width: 1024px;
 }
 // all styles
 
@@ -17,9 +21,9 @@ body{
     padding: 40px;
     background-color: #C4C4C4;
     header{
-        height: 60px;
         .header-wrap{
             background-color: #fff;
+            box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
             height: 60px;
             padding: 7px 17px;
     
@@ -27,9 +31,6 @@ body{
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-
-            margin: 0 auto;
-            max-width: 1024px;
             .logo-wrap{
                 .logo{
                     width: 47px;
@@ -69,6 +70,57 @@ body{
                     li:hover{
                         border-bottom: 4px solid #FF0090;
                     }
+                }
+            }
+        }
+    }
+    .content-wrap{
+        margin-top: 25px;
+        .product_item-wrap{
+            background-color: #fff;
+            box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+    
+            display: flex;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+            .product-item{
+                border: 5px solid transparent;
+
+                width: 23.333333%;
+                min-width: 175px;
+                height: auto;
+                margin: 10px;
+                padding-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+
+                box-sizing: content-box;
+                text-decoration: none;
+                text-transform: none;
+
+                @include animation;
+                .icon-wrap{
+                    width: 100%;
+                    margin-bottom: 30px;
+                    padding: 10px;
+                    .logo{
+                        width: 100%;
+                    }
+                }
+                .product-title{
+                    color: #313131;
+
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                    text-align: center;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
                 }
             }
         }
