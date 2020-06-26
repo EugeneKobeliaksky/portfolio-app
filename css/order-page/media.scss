@@ -12,10 +12,37 @@
 }
 @media only screen and (max-width: 700px) {
     body{
+        .content-wrap{
+            .contact_wrap{
+                .content-block{
+                    flex-wrap: wrap;
+                    .info-column{
+                        .contact-item{
+                            a{
+                                img{
+                                    width: 70px;
+                                    margin-right: 0;
+                                }
+                                p{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 450px) {
     body{
+        header{
+            .header-wrap{
+                .nav-wrap{
+                    display: none;
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 320px) {

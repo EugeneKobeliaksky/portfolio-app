@@ -7,3 +7,7 @@
     transition-delay: .1s;
     transform-style: flat;
 }
+
+@mixin border-block{
+    border-bottom: 8px solid #FF0090;
+}
