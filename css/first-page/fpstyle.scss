@@ -1,0 +1,116 @@
+
+///////////////////////////////////
+//scroll style
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+ }
+ ::-webkit-scrollbar-track {
+    background-color:#ecedee;
+ }
+ ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background-color:#d7190f;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+ }
+ ::-webkit-scrollbar-thumb:hover{
+    background-color:#d7190f;
+ }
+ ::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+ }
+ ::-webkit-scrollbar{
+    width: 4px;
+ }
+ //
+ ///////////////////////////////////
+html{
+    scroll-behavior: smooth; 
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none; 
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    cursor: pointer;
+}
+.content-width{
+    margin: 0 auto 25px auto;
+    max-width: 1024px;
+}
+
+// all styles
+body{
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    background-color: #dbdbdb;
+    .block-wrap{
+        width: 50%;
+        height: 100vh;
+        opacity: .3;
+
+        transition: .5s;
+        transition-delay: .1s;
+        transform-style: flat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+        color: #fff;
+        .content-block{
+            /* width: 45%;
+            height: 20%;
+            background-color: #fff;
+            border-radius: 35px; */
+            h2{
+                text-align: center;
+                text-decoration: none;
+                font-family: 'Jura', sans-serif;
+                font-size: 1.5em;
+                text-align: center;
+
+                text-shadow: 1px 1px 5px #000000;
+            }
+            img{
+                width: 300px; 
+                min-width: 150px;
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 25px;
+            }
+        }
+    }
+    .one{
+        background-image: url(/images/first-page/one.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .two{
+        background-image: url(/images/first-page/two.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .block-wrap:hover{
+        /* width: 55%; */
+        opacity: 1;
+        -webkit-box-shadow: inset 0px 0px 21px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 21px -12px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 21px -12px rgba(0,0,0,0.75);
+    }
+}
+
+@import "media.scss";

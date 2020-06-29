@@ -1,0 +1,26 @@
+@media only screen and (max-width: 700px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #dbdbdb;
+        align-items: center;
+        .block-wrap{
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            padding: 7px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    body{
+
+    }
+}
+@media only screen and (max-width: 320px) {
+    body{
+    }
+}
