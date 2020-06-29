@@ -55,13 +55,13 @@ body{
     max-width: 1920px;
     display: flex;
     flex-direction: row;
-    background-color: #dbdbdb;
+    background-color: #ffffff;
     .block-wrap{
         width: 50%;
         height: 100vh;
         opacity: .3;
 
-        transition: .5s;
+        transition: .5s ease-in-out;
         transition-delay: .1s;
         transform-style: flat;
 
@@ -71,11 +71,9 @@ body{
 
         text-decoration: none;
         color: #fff;
+
+        filter: grayscale(100%);
         .content-block{
-            /* width: 45%;
-            height: 20%;
-            background-color: #fff;
-            border-radius: 35px; */
             h2{
                 text-align: center;
                 text-decoration: none;
@@ -91,6 +89,10 @@ body{
                 padding: 10px;
                 background-color: #fff;
                 border-radius: 25px;
+
+                transition: .5s ease-in-out;
+                transition-delay: .1s;
+                transform-style: flat;
             }
         }
     }
@@ -105,7 +107,8 @@ body{
         background-position: center;
     }
     .block-wrap:hover{
-        /* width: 55%; */
+        filter: none;
+        width: 65%;
         opacity: 1;
         -webkit-box-shadow: inset 0px 0px 21px -12px rgba(0,0,0,0.75);
         -moz-box-shadow: inset 0px 0px 21px -12px rgba(0,0,0,0.75);
