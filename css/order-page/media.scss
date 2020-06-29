@@ -38,8 +38,33 @@
     body{
         header{
             .header-wrap{
-                .nav-wrap{
-                    display: none;
+                .logo-wrap{
+                    a{
+                        .larg-logo{
+                            display: none;
+                        }
+                        .small-logo{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .content-wrap{
+            margin-top: 25px;
+            .product_item-wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                .product-item{
+                    width: 80%;
+                    .product-title{
+                        font-size: 1.1rem;
+                    }
+                    .description{
+                        font-size: 20px;
+                    }
                 }
             }
         }

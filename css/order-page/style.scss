@@ -73,44 +73,19 @@ body{
             justify-content: space-around;
             align-items: center;
             .logo-wrap{
-                .logo{
-                    width: 47px;
-                    height: 47px;
-                }
-            }
-            .nav-wrap{
-                ul{
-                    list-style: none;
-                    display: flex;
-                    /* justify-content: space-between; */
-                    flex-wrap: wrap;
-                    li{
-                        margin-right: 30px;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-    
-                        border-top: 4px solid transparent;
-                        border-bottom: 4px solid transparent;
-    
+                width: 90%;
+                a{
+                    .larg-logo{
+                        width: 100%;
                         @include animation;
-                        a{
-                            font-family: Rubik;
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 14px;
-                            line-height: 21px;
-                            text-transform: uppercase;
-                            text-decoration: none;
-        
-                            color: #00AFF3;
-                        }
                     }
-                    li:last-child{
-                        margin-right: 0;
+                    .small-logo{
+                        width: 100%;
+                        display: none;
                     }
-                    li:hover{
-                        border-bottom: 4px solid #FF0090;
-                    }
+                }
+                a:hover .larg-logo{
+                    transform: scale(1.05);
                 }
             }
         }
@@ -124,15 +99,15 @@ body{
     
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-bottom: 25px;
             @include border-block;
-            /* flex-wrap: wrap; */
+            @include animation;
+            /* + */
             .product-item{
                 border: 5px solid transparent;
-
-                width: 23.333333%;
-                min-width: 175px;
-                height: auto;
+                width: calc(100%/6);
+                min-width: 150px;
                 margin: 10px;
                 padding-bottom: 20px;
                 display: flex;
@@ -144,27 +119,55 @@ body{
                 text-decoration: none;
                 text-transform: none;
 
+                background-color: #F7EC4A;
+
+                border-radius: 10px;
+
                 @include animation;
                 .icon-wrap{
-                    width: 100%;
-                    margin-bottom: 30px;
+                    width: 90%;
+                    margin-bottom: 0px;
                     padding: 10px;
                     .logo{
                         width: 100%;
                     }
                 }
                 .product-title{
-                    color: #313131;
+                    color: #fa3c4c;
 
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 20px;
+                    font-size: 1rem;
                     line-height: 24px;
 
                     text-align: center;
                     letter-spacing: 0.2em;
                     text-transform: uppercase;
+
+                    padding-bottom: 5px;
+                    @include animation;
                 }
+                .description{
+                    font-size: 16px;
+                    color: black;
+                    text-align: center;
+                    @include animation;
+                }
+            }
+            .product-item:hover{
+                transform: scale(1.05);
+                background-color: #fa3c4c;
+                box-shadow: rgba(0, 0, 0, 0.5);
+                border-radius: 15px;
+            }
+            .product-item:hover .product-title{
+                color: #F7EC4A;
+            }
+            .product-item:hover .description{
+                color: #ffffff;
+            }
+            .product-item:active{
+                background-color: #c70017;
             }
         }
         .contact_wrap{
