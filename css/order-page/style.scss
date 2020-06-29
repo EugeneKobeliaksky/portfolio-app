@@ -43,7 +43,7 @@ html{
     user-select: none; 
     font-family: 'Rubik', sans-serif;
 }
-a {
+a td{
     cursor: pointer;
 }
 .content-width{
@@ -85,7 +85,7 @@ body{
                     }
                 }
                 a:hover .larg-logo{
-                    transform: scale(1.05);
+                    transform: scale(1.02);
                 }
             }
         }
@@ -351,6 +351,31 @@ body{
                             }
                             td:first-child{
                                 border-right: 1px solid #CECECE;
+                            }
+                            td:nth-child(3):hover{
+                                color: #FF0090;
+                                cursor: pointer;
+                                
+                            }
+                            td:nth-child(4):hover{
+                                color: #FF0090;
+                                cursor: pointer;
+                                
+                            }
+                            td:nth-child(5):hover{
+                                color: #FF0090;
+                                cursor: pointer;
+                                
+                            }
+                            td:nth-child(6):hover{
+                                color: #FF0090;
+                                cursor: pointer;
+                                
+                            }
+                            td:nth-child(7):hover{
+                                color: #FF0090;
+                                cursor: pointer;
+                                
                             }
                         }
                         .one-row{

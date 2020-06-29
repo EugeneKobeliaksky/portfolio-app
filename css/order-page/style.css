@@ -46,7 +46,7 @@ html {
   font-family: 'Rubik', sans-serif;
 }
 
-a {
+a td {
   cursor: pointer;
 }
 
@@ -103,8 +103,8 @@ body header .header-wrap .logo-wrap a .small-logo {
 }
 
 body header .header-wrap .logo-wrap a:hover .larg-logo {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 body .content-wrap {
@@ -467,6 +467,31 @@ body .content-wrap .table_item-wrap .table-wrap .table-one-wrap table tr td:nth-
 
 body .content-wrap .table_item-wrap .table-wrap .table-one-wrap table tr td:first-child {
   border-right: 1px solid #CECECE;
+}
+
+body .content-wrap .table_item-wrap .table-wrap .table-one-wrap table tr td:nth-child(3):hover {
+  color: #FF0090;
+  cursor: pointer;
+}
+
+body .content-wrap .table_item-wrap .table-wrap .table-one-wrap table tr td:nth-child(4):hover {
+  color: #FF0090;
+  cursor: pointer;
+}
+
+body .content-wrap .table_item-wrap .table-wrap .table-one-wrap table tr td:nth-child(5):hover {
+  color: #FF0090;
+  cursor: pointer;
+}
+
+body .content-wrap .table_item-wrap .table-wrap .table-one-wrap table tr td:nth-child(6):hover {
+  color: #FF0090;
+  cursor: pointer;
+}
+
+body .content-wrap .table_item-wrap .table-wrap .table-one-wrap table tr td:nth-child(7):hover {
+  color: #FF0090;
+  cursor: pointer;
 }
 
 body .content-wrap .table_item-wrap .table-wrap .table-one-wrap table .one-row {
