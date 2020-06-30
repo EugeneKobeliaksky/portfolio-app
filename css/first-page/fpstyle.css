@@ -90,6 +90,8 @@ body .block-wrap {
   color: #fff;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 
 body .block-wrap .content-block h2 {

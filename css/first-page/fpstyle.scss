@@ -73,6 +73,7 @@ body{
         color: #fff;
 
         filter: grayscale(100%);
+        filter: blur(3px);
         .content-block{
             h2{
                 text-align: center;
