@@ -1,0 +1,14 @@
+@import "variables.scss";
+
+////font style
+////content position style
+@mixin animation{
+    transition: .2s;
+    transition-delay: .1s;
+    transform-style: flat;
+}
+
+@mixin border-block{
+    border-bottom: 8px solid #FF0090;
+    /* border-top: 8px solid #0084ff; */
+}

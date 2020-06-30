@@ -1,0 +1,178 @@
+@media only screen and (max-width: 1000px){
+    body{
+    }
+}
+@media only screen and (max-width: 900px) {
+    body{
+    }
+}
+@media only screen and (max-width: 800px) {
+    body{
+        .content-wrap{
+            .slider-wrap{
+                .slider {
+                    .slider__wrapper {
+                        .slider__item {
+                            flex: 0 0 100%; /* 2 слайди у враппері */
+                            max-width: 100%;
+                            background-color: rgb(246, 246, 246);
+                            /* padding: 10px; */
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    body{
+        .content-wrap{
+            .contact_wrap{
+                .content-block{
+                    flex-wrap: wrap;
+                    .info-column{
+                        .contact-item{
+                            a{
+                                img{
+                                    width: 70px;
+                                    margin-right: 0;
+                                }
+                                p{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    body{
+        header{
+            .header-wrap{
+                .logo-wrap{
+                    a{
+                        .larg-logo{
+                            display: none;
+                        }
+                        .small-logo{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .content-wrap{
+            margin-top: 25px;
+            .slider-wrap{
+                .slider {
+                    .slider__wrapper {
+                        .slider__item {
+                            flex: 0 0 100%; /* 2 слайди у враппері */
+                            max-width: 100%;
+                            background-color: rgb(246, 246, 246);
+                            /* padding: 10px; */
+                            text-decoration: none;
+                            .slide_item{
+                                flex-direction: column;
+                                .photo-wrap{
+                                    width: 100%;
+                                    height: 200px;
+                                    overflow: hidden;
+                                    margin-bottom: 15px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                }
+                                .description-wrap{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: left;
+                                    text-decoration: none;
+                                    height: auto;
+                                    /* justify-content: space-between; */
+                                    position: relative;
+                                    .product-title{
+                                        font-size: 18px;
+                                        text-transform: uppercase;
+                                        color: #FDF002;
+                                        background-color: #EA008A;
+                                        width: 100%;
+    
+                                        padding: 0;
+                                        padding-top: 5px;
+                                        padding-bottom: 5px;
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                        text-align: center;
+                                    }
+                                    .product-info{
+                                        font-size: 16px;
+                                        margin-left: 0;
+                                    }
+                                    .product-text-1{
+                                        font-size: 14px;
+    
+                                        margin-bottom: 10px;
+                                        margin-left: 0;
+                                    }
+                                    .product-text-2{
+                                        margin-left: 0;
+                                        margin-bottom: 35px;
+                                    }
+                                    .product-price{
+                                        margin: 0;
+                                        margin-top: 10px;
+                                        padding: 0;
+                                        padding-top: 5px;
+                                        padding-bottom: 5px;
+                                        font-size: 18px;
+                                        text-transform: uppercase;
+                                        color: #EA008A;
+                                        background-color: #FDF002;
+    
+                                        width: 100%;
+                                        text-align: center;
+                                        text-decoration: none;
+
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .slider__control {
+                    top: 30%;
+                }
+            }
+            .product_item-wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                .product-item{
+                    width: 80%;
+                    .product-title{
+                        font-size: 1.1rem;
+                    }
+                    .description{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    body{
+    }
+}
