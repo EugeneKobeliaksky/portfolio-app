@@ -610,6 +610,56 @@ body{
                 }
             }
         }
+        .template-wrap{
+            background-color: #fff;
+            box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+
+            @include border-block;
+            h2{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 0.115em;
+                text-transform: uppercase;
+                text-align: center;
+
+                color: #00AFF3;
+            }
+            .template-container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                margin-top: 15px;
+                .template-item{
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 15px;
+                    /* border: 5px solid #FF0090; */
+                    background-color: #F7EC4A;
+                    border-radius: 25px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    h4{
+
+                    }
+                    .icon-wrap{
+                        display: flex;
+                        margin-left: 15px;
+                        img{
+                            width: 35px;
+                            margin-right: 5px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
         .item-gallery-wrap{
             background-color: #fff;
             box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
@@ -633,12 +683,36 @@ body{
                     justify-content: center;
                     align-items: center;
                     @include animation;
+                    position: relative;
                     img{
                         width: 100%;
+                        
+                    }
+                    .modal-wrap{
+                        width: auto;
+                        height: auto;
+                        padding: 5px 10px;
+                        background-color: #FF0090;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 75%;
+                        display: none;
+
+                        @include animation;
+                        h4{
+                            font-size: 16px;
+                            color: #fff;
+                        }
                     }
                 }
                 .img-wrap:hover{
-                    transform: scale(1.2);
+                    transform: scale(1.1);
+                    z-index: 15;
+                    border-radius: 25px;
+                }
+                .img-wrap:hover .modal-wrap{
+                    display: block;
+                    @include animation;
                 }
             }
         }
