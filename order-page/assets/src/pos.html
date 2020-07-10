@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+	//= template/head.html
+
+<body>
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+	   window.fbAsyncInit = function() {
+			 FB.init({
+				xfbml            : true,
+				version          : 'v7.0'
+			 });
+	   };
+  
+	  (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/ru_RU/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="110141207377663"
+	   theme_color="#fa3c4c" logged_in_greeting="Вітаємо Вас! Чим ми можемо Вам допомогти?"
+	   logged_out_greeting="Вітаємо Вас! Чим ми можемо Вам допомогти?">
+	</div>
+	<!-- About Section
+	================================================== -->
+	//= template/header.html
+	<main class="content-wrap content-width">
+	//= template/product-item.html
+	//= template/contact.html
+	<!-- picture table wrap -->
+	<section class="table_item-wrap" id="clothe-block">
+		<div class="table-wrap">
+		   <div class="table-header-wrap">
+			  <h2>Виготовлення POS-матеріалів</h2>
+		   </div>
+		   <!-- //////////////////////////////// -->
+		   <!-- Card table one -->
+		   <div class="table-one-wrap">
+			  <table>
+				 <tr>
+					<th>Обрана продукція</th>
+					<th>Розмір друку, мм</th>
+					<th>Ціна, <span>грн</span></th>
+				 </tr>
+				 <tr class="one-row">
+					<td class="descr">Павук економ</td>
+					<td><span>600х1600</span></td>
+					<td>590,00</td>
+				 </tr>
+				 <tr class="two-row">
+					<td class="descr">Павук преміум</td>
+					<td><span>600х1600</span></td>
+					<td>970,00</td></td>
+				 </tr>
+				 <tr class="three-row">
+					<td class="descr">Павук стандарт</td>
+					<td><span>800х1800</span></td>
+					<td>1070,00</td>
+				 <tr class="one-row">
+					<td class="descr">Павук стандарт</td>
+					<td><span>1200х2000</span></td>
+					<td>1700,00</td>
+				 </tr>
+				 <tr class="two-row">
+					<td class="descr">Павук для вулиці</td>
+					<td><span>600х1600</span></td>
+					<td>3514,00</td>
+				 </tr>
+			  </table>
+		   </div>
+		   <!-- //////////////////////////////// -->
+		   <p>Строк виготовлення: 3 робочі дні</p>
+		   <br>
+		   <p>Матеріал: банер литий 400 г.</p>
+		   <br>
+		   <p>Якість друку: 1080 dpi</p>
+		   <br>
+		   <p>Конструкція в комплекті: Так</p>
+		   <!-- //////////////////////////////// -->
+		</div>
+	 </section>
+	 <div class="item-gallery-wrap">
+		<div class="container-wrap">
+			<div class="img-wrap">
+				<img src="img/pos-gallery/1.jpg" alt="">
+				<div class="modal-wrap">
+					<h4>Конструкція: павук</h4>
+				</div>
+			</div>
+			<div class="img-wrap">
+				<img src="img/pos-gallery/4.jpg" alt="">
+				<div class="modal-wrap">
+					<h4>Конструкція: павук</h4>
+				</div>
+			</div>
+			<div class="img-wrap">
+				<img src="img/pos-gallery/5.jpg" alt="">
+				<div class="modal-wrap">
+					<h4>Конструкція: павук</h4>
+				</div>
+			</div>
+			<div class="img-wrap">
+				<img src="img/pos-gallery/2.jpg" alt="">
+				<div class="modal-wrap">
+					<h4>Конструкція: Roll-up</h4>
+				</div>
+			</div>
+			<div class="img-wrap">
+				<img src="img/pos-gallery/3.jpg" alt="">
+				<div class="modal-wrap">
+					<h4>Конструкція: Roll-up</h4>
+				</div>
+			</div>
+			<div class="img-wrap">
+				<img src="img/pos-gallery/6.jpg" alt="">
+				<div class="modal-wrap">
+					<h4>Конструкція: Roll-up</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+    </main>
+	<script src="./js/main.js"></script>
+</body>
+</html>
